@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>org.analazar.ifml-compose-plugin</id>
+    <name>Ifml Compose</name>
+    <vendor email="ana.patricia.lazar@gmail.com" url="https://github.com/ana-lazar">Ana Lazar</vendor>
+
+    <description><![CDATA[
+        Ifml Compose Android Studio Plugin <br>
+        By Ana Lazar <br>
+        Licenta
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="IFML" secondary="false" anchor="right" factoryClass="window.ToolWindowFactory"/>
+        <projectService serviceImplementation="services.ContentManager" />
+        <projectService serviceImplementation="services.parsers.ManifestParser" />
+        <projectService serviceImplementation="services.parsers.ActivityParser" />
+        <projectService serviceImplementation="services.parsers.ComponentParser" />
+        <projectService serviceImplementation="services.parsers.ParameterParser" />
+        <projectService serviceImplementation="services.EditorCaretManager"/>
+        <projectService serviceImplementation="persistence.DiagramStateComponent"/>
+        <psi.treeChangeListener implementation="listeners.PsiTreeListenerImpl" />
+    </extensions>
+
+    <projectListeners>
+        <listener class="listeners.FileEditorListenerImpl" topic="com.intellij.openapi.fileEditor.FileEditorManagerListener"/>
+        <listener class="listeners.ToolWindowManagerListenerImpl" topic="com.intellij.openapi.wm.ex.ToolWindowManagerListener"/>
+    </projectListeners>
+</idea-plugin>

@@ -1,0 +1,34 @@
+plugins {
+    id 'org.jetbrains.intellij' version '1.4.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+}
+
+group 'org.analzar'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    // https://mvnrepository.com/artifact/org.eclipse.emf/edit
+}
+
+intellij {
+    version = '211.7628.21'
+//    version = '191.8026.42'
+    type = 'IU'
+    plugins = ['android']
+}
+
+runIde {
+    ideDir = project.file('/Applications/Android Studio.app/Contents')
+}
+
+patchPluginXml {
+    changeNotes = """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
