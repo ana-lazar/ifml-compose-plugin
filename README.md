@@ -6,7 +6,7 @@ The user experience comprises automatic code generation through model diagram op
 
 The plugin is meant to ease Android user interface development by allowing programmers to generate or modify interface components directly through diagrams, and then customize them from the source code.
 
-## Details
+## Summary
 
   - Destined for Android applications that are built using Jetpack Compose
   - Model-driven approach to mobile app development
