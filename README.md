@@ -5,3 +5,13 @@ Android Studio plugin that provides tools to visualize and edit [IFML](https://w
 The user experience comprises automatic code generation through model diagram operations, as well as synchronized, parallel visualization of both diagrams and source code.
 
 The plugin is meant to ease Android user interface development by allowing programmers to generate or modify interface components directly through diagrams, and then customize them from the source code.
+
+- Destined for Android applications that are built using Jetpack Compose
+  - Model-driven approach to mobile app development
+    - Vizualize and edit IFML models for the current project
+    - Generate and modify interface components directly through diagrams
+  - Kotlin: all language features
+  - Plugin GUI: JavaFX
+  - Targeted IDE: Android Studio
+  - Standard: [IFML](https://www.ifml.org/) (Interaction Flow Modeling Language)
+ 
