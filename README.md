@@ -8,8 +8,8 @@ The plugin is meant to ease Android user interface development by allowing progr
 
 ## Summary
 
-  - Destined for Android applications that are built using Jetpack Compose
-  - Model-driven approach to mobile app development
+  - Android applications built using Jetpack Compose
+  - Model-driven approach
   - Kotlin: all language features
   - Plugin GUI: JavaFX
   - Targeted IDE: Android Studio
